@@ -1,5 +1,13 @@
 import { SignUp } from '@clerk/nextjs';
 
+export function generateStaticParams() {
+  return [
+    { 'sign-up': [] },
+    { 'sign-up': ['sso-callback'] },
+    // Add any other specific paths your Clerk sign-up flow might use
+  ];
+}
+
 export default function SignUpPage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center px-4">
