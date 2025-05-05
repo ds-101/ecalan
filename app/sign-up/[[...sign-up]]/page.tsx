@@ -4,7 +4,6 @@ export function generateStaticParams() {
   return [
     { 'sign-up': [] },
     { 'sign-up': ['sso-callback'] },
-    // Add any other specific paths your Clerk sign-up flow might use
   ];
 }
 
